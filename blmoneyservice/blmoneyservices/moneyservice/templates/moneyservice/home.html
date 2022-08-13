@@ -1,0 +1,83 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.4/css/flag-icons.min.css"
+        integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="ellipse">
+    </div>
+    <div class="navi">
+        <nav>
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="" srcset="">
+            </div>
+            <ul style="margin-right: 105px;">
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">TRACK TRANSACTION</a></li>
+            </ul>
+            <div class="icons">
+                <span>Login</span>
+                <span>Sign up</span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="illustration">
+        <img src="{% static 'images/Banknote-pana.svg' %}" alt="">
+    </div>
+
+    <div class="container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="input-fields">
+                <!-- RUSSIA TO ZAMBIA -->
+                <div class="left-input cnter">
+                    <input name="amount" min="0" placeholder="You're sending" id="leftInput" required>
+                    <div class='options'>
+                        <i class="fi fi-ru"></i>
+                        <span class="option-text">RUB</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="mid-input">
+                    <i onclick="ani()" id="exchange" class="fa fa-exchange" aria-hidden="true"></i>
+                </div>
+
+                <div class="right-input">
+                    <input type="text" placeholder="They recieve" id="rightInput" name="amountzmw" required>
+                    <div class='options'>
+                        <i class="fi fi-zm"></i>
+                        <span class="option-text">ZMW</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                </div>
+
+                <button class="submit-btn" type="submit">Transfer Now</button>
+
+            </div>
+        </form>
+
+
+
+
+        <script src="https://kit.fontawesome.com/8e3db141ed.js" crossorigin="anonymous"></script>
+
+        <script src="{% static 'javascript/Js.js' %}"></script>
+</body>
+
+</html>

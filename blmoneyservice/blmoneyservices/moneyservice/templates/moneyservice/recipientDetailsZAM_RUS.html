@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Rus to Zam</h1>
+    <div>
+        <p>You're sending {{ amount }} ZMW to Russia</p>
+        <p>Recipient receives {{ total }} ₽ </p>
+    </div>
+    <form method="POST" action="{% url 'rus_zam_tr' %}">
+        {% csrf_token %}
+
+        <fieldset>
+            <legend>Enter Recipient Details</legend>
+            <label>Full name</label>
+            <input type="text" name="recipient_name" placeholder="Full name"><br>
+            <div style="padding-top: 10px;">
+                <label>Phone number</label>
+                <input type="number" name="recipient_pNumber" placeholder="Phone number">
+            </div>
+
+            <div style="padding-top: 10px;">
+                <button type="submit">Next</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
