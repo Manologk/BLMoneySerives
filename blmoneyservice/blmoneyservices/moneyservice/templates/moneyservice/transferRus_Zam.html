@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,27 +8,21 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/moneyservice/static/css/transferedRusZam.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Jura" />
-
     <script src="https://kit.fontawesome.com/c85a8bc21e.js" crossorigin="anonymous"></script>
     
+
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="{% static css/transferedRusZam.css %}" />
+
+
     <title>Transferred</title>
 </head>
 
 <body>
-    <!-- <div style="display:grid; place-items:center;">
-        <h3>Please SEND {{ amount }}₽ via sberbank or СБП<br>
-            Press the "SENT" when you've transferred
-        </h3>
-        <h4>SBERBANK: 0000 0000 0000 0000</h4>
-        <h4>СБП: +7900 123 45 67</h4>
-        <button>SENT</button>
-    </div> -->
-
     <div class="container-card">
         <div class="details">
-            <p class="amount">Total AMOUNT: <span style="font-family: 'jura'; font-size: 2rem; font-style: bold; font-weight: 600; color: #F66923;">7000 ₽</span></p>
+            <p class="amount">Total AMOUNT: <span style="font-family: 'jura'; font-size: 2rem; font-style: bold; font-weight: 600; color: #F66923;">{{ amount}} ₽</span></p>
             <p class="total">
                 Please send the total amount to either of the following accounts and
                 press transferred.
