@@ -1,0 +1,96 @@
+@import url('http://fonts.cdnfonts.com/css/kodchasan');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdf;
+    font-family: 'kodchasan';
+}
+
+.container-card{
+    max-width: 500px;
+    max-height: 800px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.details, 
+.account-info,
+.button,
+.icons{
+    width: 100%;
+    height: 185px;
+}
+
+
+.details{
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.details .amount{
+    padding-top: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+.details .total{
+    padding: 0 4rem;
+    font-size: 1.2rem;
+}
+
+.account-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-info svg{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    padding-right: 1.8rem;
+}
+
+path{
+    fill: #F66923;
+}
+
+.account-info span{
+    font-size: 1.7rem;
+}
+
+.account-info .fa-phone{
+    color: #F66923;;
+    font-size: 1.7rem;
+}
+
+button{
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    width: 20%;
+    height: 8%;
+    background: #F66923;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'kodchasan';
+}

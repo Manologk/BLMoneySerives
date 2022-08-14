@@ -1,20 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/moneyservice/static/css/transferedRusZam.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Jura" />
+
+    <script src="https://kit.fontawesome.com/c85a8bc21e.js" crossorigin="anonymous"></script>
+    
+    <title>Transferred</title>
 </head>
+
 <body>
-    <div style="display:grid; place-items:center;">
+    <!-- <div style="display:grid; place-items:center;">
         <h3>Please SEND {{ amount }}₽ via sberbank or СБП<br>
             Press the "SENT" when you've transferred
         </h3>
         <h4>SBERBANK: 0000 0000 0000 0000</h4>
         <h4>СБП: +7900 123 45 67</h4>
         <button>SENT</button>
+    </div> -->
+
+    <div class="container-card">
+        <div class="details">
+            <p class="amount">Total AMOUNT: <span style="font-family: 'jura'; font-size: 2rem; font-style: bold; font-weight: 600; color: #F66923;">7000 ₽</span></p>
+            <p class="total">
+                Please send the total amount to either of the following accounts and
+                press transferred.
+            </p>
+        </div>
+
+        <div class="account-info">
+
+            <p><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 46">
+
+                <path class="st0" d="M44,8.9c-0.5-0.7-1-1.4-1.5-2.1L14.8,22.7L1.4,15c-0.3,0.9-0.5,1.7-0.6,2.6l14.1,8.1L44,8.9z" fill="#1A9F29"/>
+                <path class="st0" d="M14.8,28.7L0.4,20.4c-0.1,0.5-0.1,1.1-0.1,1.6c0,13.1,10.6,23.8,23.8,23.8c13.1,0,23.8-10.6,23.8-23.8
+                    c0-3.9-0.9-7.6-2.6-10.8L14.8,28.7z" fill="#1A9F29"/>
+                <path class="st0" d="M40.6,4.8c-0.7-0.7-1.4-1.2-2.1-1.8L14.8,16.7L3.4,10.2c-0.4,0.7-0.8,1.5-1.2,2.3l12.5,7.2L40.6,4.8z" fill="#1A9F29"/>
+                <path class="st0" d="M36.1,1.4c-0.9-0.5-1.8-1-2.8-1.4L14.8,10.7L6.5,6C5.9,6.6,5.4,7.3,4.8,8l9.9,5.7L36.1,1.4z" fill="#1A9F29"/>
+                </svg> <span style="font-family: 'jura';"> 1234-5678-9101-1213</span></p>
+            
+            <p><i style="margin-right: 30px;" class="fa-solid fa-phone"></i><span style="font-family: 'jura'; margin-right: 30px;"> +7 900 623-17-06</span></p>
+        </div>
+
+        <button class="submit-btn" type="submit">Transferred</button>
+
+        <div class="icons"></div>
     </div>
 </body>
+
 </html>
