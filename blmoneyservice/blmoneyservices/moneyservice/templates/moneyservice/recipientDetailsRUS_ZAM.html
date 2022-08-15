@@ -2,45 +2,59 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/8e3db141ed.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8e3db141ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="{% static 'css/recepient.css' %}" />
     <title>Recepient details</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="card">
-            <div class="card-header">
-                <h3>Enter<br />Recepient Details</h3>
-                <h5>
-                    You're sending <spans style="color: #F66923; font-weight: bold;"> {{ amount }} ₽</spans> to Zambia
-                    <br />
-                    Recipient will recieve <span style="color: #F66923; font-weight: bold;">{{ total }} ZMW</span> 
-                </h5>
-            </div>
-            <form method="POST" action="{% url 'rus_zam_tr' %}" class="card-body">
-                {% csrf_token %}
-                <div class="box namebox">
-                    <input type="text" name="recipient_name" value="" required>
-                    <label>Full Name</label>
-                </div>
-                <div class="box numbox">
-                    <input type="text" name="recipient_pNumber" value="" required>
-                    <label>Number</label>
-                </div>
-                <button type="submit">Transfer</button>
-            </form>
+      <div class="card">
+        <div class="card-header">
+          <h3>Enter<br />Recepient Details</h3>
+          <h5>
+            You're sending
+            <spans style="color: #f66923; font-weight: bold">
+              {{ amount }} ₽</spans
+            >
+            to Zambia
+            <br />
+            Recipient will recieve
+            <span style="color: #f66923; font-weight: bold"
+              >{{ total }} ZMW</span
+            >
+          </h5>
         </div>
+        <form method="POST" action="{% url 'rus_zam_tr' %}" class="card-body">
+          {% csrf_token %}
+          <div class="box namebox">
+            <input name="fullNames" type="text" name="recipient_name" value="" required />
+            <label>Full Name</label>
+          </div>
+          <div class="box numbox">
+            <input name="phoneNumber" type="text" name="recipient_pNumber" value="" required />
+            <label>Number</label>
+          </div>
+          <button type="submit">Transfer</button>
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -72,6 +72,11 @@ path{
     fill: #F66923;
 }
 
+svg{
+    position: absolute;
+    top: 10px;
+}
+
 .account-info span{
     font-size: 1.7rem;
 }
