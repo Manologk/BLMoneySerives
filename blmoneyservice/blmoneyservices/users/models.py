@@ -5,9 +5,14 @@ from django.db import models
 class Client(models.Model):
     # client_id = models.CharField(primary_key=True, autoincrement=True)
     name = models.CharField(max_length=25)
-    email = models.EmailField(max_length=30, default=None, null=True, blank=True)
-    phone = models.CharField(max_length=25, default=None, null=True, blank=True)
+    email = models.EmailField(max_length=30, default=None, null=False, blank=False)
+    phone = models.CharField(max_length=25, default=None, null=False, blank=False)
     password = models.CharField(max_length=15)
+
+
+class RecipientRusZam(models.Model):
+    fullname = models.CharField(max_length=30, null=False, blank=False)
+    phoneNumber = models.CharField(max_length=25, null=False, blank=False)
 
 
 class Transaction(models.Model):

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .moneytransferalgo import Variablez
-from users.models import Client, Transaction, TransactionDetails
+from users.models import RecipientRusZam, Transaction
 
 import random
 
@@ -39,8 +39,6 @@ def homepage(request):
 
 def get_details_rus_zam(request):
     global amountRus_Zam, resRus_Zam
-    # if request.method == 'POST':
-
 
     return render(request, 'moneyservice/recipientDetailsRUS_ZAM.html', {
         'amount': amountRus_Zam,
@@ -51,7 +49,13 @@ def get_details_rus_zam(request):
 
 def display_transaction_rus_zam(request):
     global amountRus_Zam, resRus_Zam
-    print(request.POST)
+
+    if request.method == 'POST':
+        fullnames = request.POST['fullNames']
+        phonenumber = request.POST['phoneNumber']
+
+        recipient = RecipientRusZam(fullname=fullnames, phoneNumber=phonenumber)
+        recipient.save()
     return render(request, 'moneyservice/transferRus_Zam.html', {'amount': amountRus_Zam})
 
 
