@@ -1,147 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
 
 html {
-    font-family: 'Kodchasan', sans-serif;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  font-family: "Kodchasan", sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .ellipse {
-    position: absolute;
-    width: 1602px;
-    height: 1555px;
-    left: -219px;
-    top: -226px;
-    border-radius: 50%;
-    background: linear-gradient(340.19deg, #F66923 14.39%, rgba(217, 217, 217, 0) 84.56%);
-    z-index: -5000;
+  position: absolute;
+  width: 1602px;
+  height: 1555px;
+  left: -219px;
+  top: -226px;
+  border-radius: 50%;
+  background: linear-gradient(
+    340.19deg,
+    #f66923 14.39%,
+    rgba(217, 217, 217, 0) 84.56%
+  );
+  z-index: -5000;
 }
-
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-
 
 nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
 }
 
-
 nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: .98rem;
+  color: black;
+  text-decoration: none;
+  font-size: 0.98rem;
 }
 
 nav ul li a:hover {
-    color: #F66923;
+  color: #f66923;
 }
 
-.illustration{
-    position: absolute;
-    height: 3%;
-    width: 30%;
-    left: 50%;
-    top: 43%;
-    z-index: 10000;
+.illustration {
+  position: absolute;
+  height: 3%;
+  width: 30%;
+  left: 50%;
+  top: 43%;
+  z-index: 10000;
 }
-
-
 
 input {
-    outline: none;
-    background: none;
-    border: none;
-    padding-left: 10px;
-    font-size: 1.2rem;
+  outline: none;
+  background: none;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.2rem;
 }
 
 .input-fields {
-    display: flex;
-    width: fit-content;
-    gap: 1rem;
-    width: 50%;
-    height: 60px;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 30px;
-    position: absolute;
-    left: 10%;
-    bottom: 50%;
-
+  display: flex;
+  width: fit-content;
+  gap: 1rem;
+  width: 50%;
+  height: 60px;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 30px;
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
 }
 
 .left-input,
 .options,
 .mid-input,
 .right-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .options,
 .mid-input {
-    cursor: pointer;
-    font-size: large;
+  cursor: pointer;
+  font-size: large;
 }
 
 .left-input {
-    border: 1px solid;
-    border-radius: 30px 0 0 30px;
-    height: 80%;
+  border: 1px solid;
+  border-radius: 30px 0 0 30px;
+  height: 80%;
 }
 
-.left-input-zm{
-    border-radius: 30px 0 0 30px;
+.left-input-zm {
+  border-radius: 30px 0 0 30px;
 }
 
 .right-input {
-    border: 1px solid;
-    border-radius: 0 30px 30px 0;
-    height: 80%;
+  border: 1px solid;
+  border-radius: 0 30px 30px 0;
+  height: 80%;
 }
 
 .option-text {
-    font-weight: bolder;
-    padding-right: .5rem;
+  font-weight: bolder;
+  padding-right: 0.5rem;
 }
 
-.fi{
-    border-radius: 50%;
-    font-size: 1.7rem;
-    margin-right: 0.15em;
-} 
+.fi {
+  border-radius: 50%;
+  font-size: 1.7rem;
+  margin-right: 0.15em;
+}
 
-.input-fields{
-    position: relative;
+.input-fields {
+  position: relative;
 }
 
 .submit-btn {
-    background: #F66923;
-    font-family: 'Kodchasan', sans-serif;
-    color: white;
-    width: 150px;
-    height: 50px;
-    border: none;
-    position: absolute;
-    top: 150px;
-    left: 70%;
-    cursor: pointer;
+  background: #f66923;
+  font-family: "Kodchasan", sans-serif;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: none;
+  position: absolute;
+  top: 150px;
+  left: 70%;
+  cursor: pointer;
 }
 
-form{
-    position: absolute;
-    top: 30%;
-    left: 15%;
+form {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.icons span {
+  margin-left: 10px;
+}
+
+.icons span a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.icons span a:hover {
+  border: 2px solid #f66923;
+  color: white;
+  background-color: #f66923;
+  border-radius: 10px;
 }

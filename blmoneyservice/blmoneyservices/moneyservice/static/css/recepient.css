@@ -1,92 +1,89 @@
-@import url('http://fonts.cdnfonts.com/css/kodchasan');
+@import url("http://fonts.cdnfonts.com/css/kodchasan");
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5F5;
-    font-family: 'kodchasan';
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+  font-family: "kodchasan";
 }
 
-h5{
-    font-weight: 500;
+h5 {
+  font-weight: 500;
 }
 
-
-.card{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 420px;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 420px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.card .box{
-    position: relative;
+.card .box {
+  position: relative;
 }
 
-.card .box input{
-    width: 80%;
-    padding: 10px 0;
-    font-size: 16px;
-    margin-bottom: 30px;
-    margin-left: 15%;
-    border: none;
-    outline: none;
-    background-color: #D9D9D9;
-    border-radius: 11px;
+.card .box input {
+  width: 80%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-left: 15%;
+  border: none;
+  outline: none;
+  background-color: #d9d9d9;
+  border-radius: 11px;
 }
 
-.card .box label{
-    position: absolute;
-    top: 0;
-    left: 15%;
-    padding: 10px 0 0 10px;
-    color: #727272;
-    pointer-events: none;
-    transition: .5s;
+.card .box label {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  padding: 10px 0 0 10px;
+  color: #727272;
+  pointer-events: none;
+  transition: 0.5s;
 }
-
 
 .card .box input:focus ~ label,
-.card .box input:not(:empty) ~ label{
-    top: -20px;
-    color: #F66923;
-    font-size: 14px;
-    font-weight: 600;
+.card .box input:not(:empty) ~ label {
+  top: -20px;
+  color: #f66923;
+  font-size: 14px;
+  font-weight: 600;
 }
-.numbox{
-    position: relative;
-}
-
-
-button{
-    border-radius: 5px;
-    position: absolute;
-    top: 85%;
-    left: 40%;
-    width: 5rem;
-    height: 2rem;
-    background: #F66923;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    font-family: 'kodchasan';
+.numbox {
+  position: relative;
 }
 
-.zm-rus{
-    height: 380px;
+button {
+  border-radius: 5px;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  width: 5rem;
+  height: 2rem;
+  background: #f66923;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "kodchasan";
 }
 
-.card-header{
-    text-align: center;
-    font-size: 1.2rem;
+.zm-rus {
+  height: 380px;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 1.2rem;
 }
