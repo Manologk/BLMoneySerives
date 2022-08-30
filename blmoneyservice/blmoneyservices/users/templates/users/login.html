@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e3db141ed.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/login_p.css' %}">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            LOGIN
+        </div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" id="" placeholder='Username' required>
+            <input type="text" name="password1" id="" placeholder='Password' required>
+            <a href="{% url 'register' %}">or Create an account</a>
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</body>
+
+</html>
